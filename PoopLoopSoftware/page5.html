@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Short Play Script</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="libs/p5.js"></script>
+    <style>
+        body {
+            background-image: url('Destageme.jpg'); /* Replace 'Destageme.jpg' with the correct image path */
+        }
+        .container {
+            padding: 20px;
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <div id="particles-js"></div>
+</head>
+<div id = "p5-container"></div>
+<script>
+    particlesJS('particles-js', {
+      particles: {
+        number: {
+          value: 200,  // Number of snowflakes
+          density: {
+            enable: true,
+            value_area: 800
+          }
+        },
+        color: {
+          value: "#ffffff"  // Snowflake color (white)
+        },
+        size: {
+          value: 5,  // Size of snowflakes
+          random: true  // Random size variation
+        },
+        move: {
+          enable: true,
+          speed: 3,  // Speed of falling snowflakes
+          direction: "bottom",  // Direction of movement (falling down)
+          random: true,
+          straight: false,
+          out_mode: "out"  // Particles disappear once they move out of the screen
+        }
+      },
+      interactivity: {
+        events: {
+          onhover: {
+            enable: false
+          },
+          onclick: {
+            enable: false
+          }
+        }
+      }
+    });
+  </script>
+<body>
+    <audio id="background-audio" loop>
+        <source src="sound/Shyweek _Still_burning.wav" type="audio/wav">
+        Your browser does not support the audio element.
+    </audio>
+    <img src="audio_play.png" id="play-audio-button" alt="Play Audio" />
+
+    <script>
+        const audioButton = document.getElementById('play-audio-button');
+        const audio = document.getElementById('background-audio');
+        
+        audioButton.addEventListener('click', () => {
+            audio.play();
+            audioButton.style.display = 'none';
+        });
+    </script>
+
+    <div class="container">
+        <h2></h2>
+        
+        <!-- Scene 1 -->
+        <div class="scene">
+            <div class="dialogue-section">
+                <p><span class="character">Spade comes back with two more students, Sofia and William.</span></p>
+
+                <p><span class="character">William:</span></p>
+                <p class="dialogue">Sorry, the mail said we start later.</p>
+                <p><span class="character">Everyone is grabbing a seat in a circle that forms a +</span></p>
+                <p><span class="character">George</span></p>
+                <p class="dialogue">SO… let's do an introduction again, I’m George, oh and let's add a name of a city, any city, anywhere, it doesn't need to be where you are from or somewhere that you've been… I'll start, George… Lagos.</p>
+                <p><span class="character">Sofia:</span></p>
+                <p class="dialogue">Sofia - Singapore</p>
+                <p><span class="character">William:</span></p>
+                <p class="dialogue">William - Panama City</p>
+                <p><span class="character">Spade:</span></p>
+                <p class="dialogue">Spade - Trondheim</p>
+                <p><span class="character">Elisa:</span></p>
+                <p class="dialogue">Elisa - Basel</p>
+
+                <div class="image-container">
+                    <img src="Cross_classmates.jpg" alt="Scene 2 Detail" />
+                </div>
+
+                <p><span class="character">Standing up each name</span></p>
+                
+                <p><span class="character">George:</span></p>
+                <p class="dialogue">George… Lagos</p>
+                <p><span class="character">Sofia:</span></p>
+                <p class="dialogue">Sofia - Singapore</p>
+                <p><span class="character">William:</span></p>
+                <p class="dialogue">William - Panama City</p>
+                <p><span class="character">Spade:</span></p>
+                <p class="dialogue">Spade - Trondheim</p>
+                <p><span class="character">Elisa:</span></p>
+                <p class="dialogue">Elisa - Basel</p>
+               
+                <p><span class="character">Music enters, lights fade. Everyone is starting to walk around the space naming other cities in the world</span></p>
+                <p class="dialogue">Mexico City, Paris, Madrid, Geneva, Cairo, San Francisco…</p>
+                
+                <div class="image-container">
+                    <img src="xities.jpg" alt="Scene 2 Detail" />
+                </div>
+                
+                <br><br>
+                <p><span class="character">The students and George move slowly around the classroom, their footsteps echoing in the dim light. One by one, the flashlights go dark. As the final flashlight remains lit, they all stop, their heads turning sharply toward the now glowing object resting on George's table.</span></p>
+                <div class="image-container">
+                    <img src="End.jpg" alt="Scene 2 Detail" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="nav-buttons">
+        <a href="index.html"><button>Continue</button></a>
+    </div>
+</body>
+</html>
+
+      
+      
+    

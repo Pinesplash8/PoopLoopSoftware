@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Short Play Script</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="libs/p5.js"></script>
+    <script src="sketch.js"></script>
+    <title>Short Play Script</title>
+    
+    
+    
+    <style>
+        
+        
+        body {
+            background-image: url('openpage.png'); /* Replace 'openpage.png' with the correct image path */
+            background-size: cover; /* Makes the image cover the entire background */
+            background-position: center; /* Centers the image */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+        }
+        
+        #play-audio-button {
+            position: absolute;
+            top: 10%; /* Adjust the top position as needed */
+            left: 80%; /* Adjust the left position as needed */
+            transform: translate(-50%, -50%);
+            z-index: 20; /* Ensure this stays above the canvas */
+            cursor: pointer;
+            width: 150px; /* Adjust the width of the button */
+            height: auto; /* Adjust the height proportionally */
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <audio id="background-audio" loop>
+        <source src="sound/Shyweek _Red.wav" type="audio/wav">
+        Your browser does not support the audio element.
+    </audio>
+    <img src="audio_play.png" id="play-audio-button" alt="Play Audio" />
+    
+    <script>
+        const audioButton = document.getElementById('play-audio-button');
+        const audio = document.getElementById('background-audio');
+        
+        audioButton.addEventListener('click', () => {
+            audio.play();
+            audioButton.style.display = 'none';
+        });
+    </script>
+    <div>
+        
+    </div>
+    
+    
+    
+    
+    <div class="container">
+        <h2></h2>
+        
+        <!-- Scene 1 -->
+        <div class="scene">
+            
+            
+            <div class="image-container">
+                <img src="crossnecklace.png" alt="Scene 1 Classroom" />
+                
+            </div>
+            
+            <div class="dialogue-section">
+                
+                <p><span class="character">Spade(giggling):</span></p>
+                <p class="dialogue">Sorry but that was A QUESTION, NOT AN ASSUMPTION, didn’t you hear the question mark?? there was A QUESTION MARK </p>
+                
+                <P><Span class="character">Elisa searches for a seat to place her bag.</span></P>
+                    <P class="dialogue">I'm sorry I'm afraid of Catholics,  </P>
+                    <P><Span class="character">•Elisa’s bag falls + 
+                        •	Black beans are spreading +
+                    </span></P>
+                    <p><span class="character">Elisa:</span></p>
+                    <p class="dialogue">Shit</p>
+                    <p><span class="character">Both are laughing </span></P>
+                        
+                        
+                        
+                        <div class="image-container" id="img2">
+                            <img src="blackbeans.png" alt="Scene 1 Classroom" />
+                        </div>
+                        
+                        
+                        <p><span class="character">Elisa:</span></p>
+                        <p class="dialogue">Soo... how is the class?</p>
+                        
+                        <p><span class="character">Spade:</span></p>
+                        <p class="dialogue">I really like it but it's very specific. </p>
+                        
+                        <p><span class="character">Elisa(smiling):</span></p>
+                        <p class="dialogue">Ok is the class good Tho? </p>
+                        
+                        <p><span class="character">Spade:</span></p>
+                        <p class="dialogue">The best around. but I guess some don't like the teacher, but you know they just don't get it, they take everything he says so personal and automatically compare everything with their own little biographies… like he will say something and their response will be to go on about their grandmas.</p>
+                        
+                        <p><span class="character">Elisa:</span></p>
+                        <p class="dialogue">Ah yeah I know this vibe, it can be annoying.</p>
+                        
+                        <p><span class="character">Spade:</span></p>
+                        <p class="dialogue">Even though I also just asked you if you're catholic because you are wearing a cross, and it's kinda the same-</p>
+                        
+                        <p><span class="character">Elisa:</span></p>
+                        <p class="dialogue">No no, you were kidding I get it, it's not the same… it’s just a more niche joke I wasn't sure at first, because sometimes it's coming from stupid people. </p>
+                        
+                        <p><span class="character">Spade:</span></p>
+                        <p class="dialogue">Sorry anyway, I'm kind of a troll- I’m working on it. </p>
+                        
+                        <p><span class="character">Elisa(one small giggle):</span></p>
+                        <p class="dialogue">Mmmegh 
+                            But, like, is he tough?  
+                        </p>
+                        
+                        <p><span class="character">Spade:</span></p>
+                        <p class="dialogue">Who? George?</p>
+                        
+                        <p><span class="character">Elisa:</span></p>
+                        <p class="dialogue">Yeah</p>
+                        
+                        <p><span class="character">Spade:</span></p>
+                        <p class="dialogue">ah, nahh no, maybe yeh I dont know eh ah, giggle but honestly… maybe I'm not the most objective person to be asked about this class… I think I'm just in love with him. </p>
+                        
+                        <p><span class="character">Elisa(over surprised but still surprised):</span></p>
+                        <p class="dialogue">Really? </p>
+                        
+                        <p><span class="character">Spade:</span></p>
+                        <p class="dialogue">Yeh but not like in the regular meaning it's more dramatic, like I know what I'm doing I'm always doing it… </p>
+                        
+                        <p><span class="character">Elisa:</span></p>
+                        <p class="dialogue">Mmmmm… (giggling) </p>
+                    </div>
+                    
+                    
+                </div>
+            </div>    
+            
+        </body>
+        <div class="nav-buttons">
+            
+            <a href="page2.html"><button>Continue</button></a>
+        </div>
+        <div id = "p5-container"></div>
+        </html>

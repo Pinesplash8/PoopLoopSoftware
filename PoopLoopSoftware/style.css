@@ -1,0 +1,146 @@
+
+
+#p5-container canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -10; /* Ensures it's in the background */
+    pointer-events: none; /* Allows clicks to pass through the canvas */
+}
+
+.container, .nav-buttons {
+    position: relative;
+    z-index: 10; /* Ensures they are above the canvas */
+}
+
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-size: cover; /* Makes the image cover the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    color: #333;
+    position: relative; /* To allow layering of elements */
+}
+
+.container {
+    max-width: 60vw;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.7); /* White background with 70% opacity */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.scene {
+    margin: 2rem 0;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+.character {
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+.dialogue {
+    margin-left: 5rem;
+    font-style: italic;
+}
+
+.stage-direction {
+    margin-left: 1.5rem;
+    color: #555;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.image-container { 
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #2c3e50;
+    color: white;
+    margin-top: 2rem;
+}
+
+.nav-buttons {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.nav-buttons button {
+    margin: 0 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nav-buttons button:hover {
+    background-color: #1a252f;
+}
+
+#play-audio-button {
+    position: absolute;
+    top: 10%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    width: 150px;
+    height: auto;
+}
+
+#snow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+#particles-js {
+    position: fixed;      /* Fixed positioning makes it stay in place while scrolling */
+    top: 0;               /* Align it to the top of the page */
+    left: 0;              /* Align it to the left of the page */
+    width: 100%;          /* Make the container cover the entire width of the page */
+    height: 100%;         /* Make the container cover the entire height of the page */
+    z-index: 9999;        /* Ensure the snowflakes appear on top of all other content */
+    pointer-events: none; /* Prevents the snowflakes from interfering with clicks on other elements */
+  }
+  
+  
+  .content {
+    position: relative;
+    z-index: 10;        /* Make sure content appears above snowflakes */
+    padding: 20px;
+    text-align: center;
+    color: #333;
+  
+  }
+  

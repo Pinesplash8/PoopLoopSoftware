@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Short Play Script</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="libs/p5.js"></script>
+    <style>
+        body {
+            background-image: url('chalkboards.png'); 
+        }
+   
+    </style>
+</head>
+<body>
+
+    <audio id="background-audio" loop>
+        <source src="sound/Shyweek_playedOut.wav" type="audio/wav">
+        Your browser does not support the audio element.
+    </audio>
+
+    <img src="audio_play.png" id="play-audio-button" alt="Play Audio" />
+
+    <div class="container">
+        
+        
+        <div class="scene">
+            <div class="dialogue-section">
+                <p><span class="character">Spade sings [to the audience]:</span></p>
+                <p class="dialogue">
+                    George <br> 
+                    a character in your play<br>
+                    you know so much about me<br>
+                    but lies travel fast<br>
+                    when you have a crush<br><br>
+
+                    George<br>
+                    an actor in the best film you never see<br>
+                    you know so much<br>
+                    and then you<br>
+                    destage me de-stage me<br>
+                    nobody <br><br>
+
+                    George <br>
+                    you know so much<br>
+                    just a tool for you to blow up<br>
+                    the factory<br>
+                    The seed bomb you throw<br>
+                    i'll just be<br>
+                    What a conspiracy to be<br>
+                    what conspiracy shall I be <br>
+                    in the furrows i'll be <br>
+                    Sweet potato or the crow<br>
+                    that eats me<br><br>
+
+                    George<br>
+                    My teacher My fantasy<br>
+                    the next city i'll be <br>
+                    And I’ll never know enough<br>
+                    My teacher my lust <br><br>
+
+                    George<br>
+                    I'm the actor in your play<br>
+                    I tried as much as something can be<br>
+                    it's my fault you see<br>
+                    gorgeous stunning old film you didn’t see<br>
+                    What conspiracy shall I be? <br>
+                    what a conspiracy to be<br>
+                    what a conspiracy to live in<br>
+                    when you ask me <br>
+                    In the furrows i'll be <br>
+                    seed bombing in you  <br>
+                    destage me De-stage me <br>
+                    charity<br>
+                    nature, energy, that kind of stuff.<br>
+                    The next city I’ll be<br>
+                    angels will fly <br>
+                </p>
+
+                <p><span class="character">Spade leaves the room.</span></p>
+            </div>
+
+            <div class="image-container">
+                <img src="seedbomb.png" alt="Scene 2 Detail" />
+            </div>
+
+        
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('play-audio-button').addEventListener('click', function () {
+            const audio = document.getElementById('background-audio');
+            if (audio.paused) {
+                audio.play();
+                this.style.display = 'none'; // Hide the button after playing
+            }
+        });
+    </script>
+    <!-- Continue Button -->
+    <div class="nav-buttons">
+        <a href="page4.html"><button>Continue</button></a>
+    </div>
+
+</body>
+</html>
+

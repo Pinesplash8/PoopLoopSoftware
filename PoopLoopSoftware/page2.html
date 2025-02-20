@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Short Play Script</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="libs/p5.js"></script>
+    <style>
+        body {
+            background-image: url('openpage.png'); /* Replace 'openpage.png' with the correct image path */
+            }
+        </style>
+    </head>
+    <body>
+        <audio id="background-audio" loop>
+            <source src="sound/Shyweek _Red.wav" type="audio/wav">
+                Your browser does not support the audio element.
+            </audio>
+            <img src="audio_play.png" id="play-audio-button" alt="Play Audio" />
+
+            <script>
+                const audioButton = document.getElementById('play-audio-button');
+                const audio = document.getElementById('background-audio');
+
+                audioButton.addEventListener('click', () => {
+                    audio.play();
+                    audioButton.style.display = 'none';
+                });
+            </script>
+
+
+            <div class="container">
+                <h2></h2>
+
+                <!-- Scene 1 -->
+                <div class="scene">
+
+                    <div class="dialogue-section">
+                        <p><span class="character">The door opens - George comes in with a glass of water, says hi and goes directly to his desk, Spade is not embarrassed.</span></p>
+
+
+                        <p><span class="character">George:</span></p>
+
+                        <p class="dialogue">Hi</p>
+
+                        <p><span class="character">Spade:</span></p>
+                        <p class="dialogue">Hii</p>
+                        <p><span class="character">George:</span></p>
+
+                        <p class="dialogue">ah em where is everyone?</p>
+
+                        <p><span class="character">Spade:</span></p>
+                        <p class="dialogue">em I think class starts in 10 minutes… </p>
+                        <p><span class="character">George:</span></p>
+
+                        <p class="dialogue">ah? (checks his phone) right…ok….</p>
+                        <p class="dialogue">(ASKS ELISA) hello… and who do we have here?</p>
+                        <p><span class="character">Spade:</span></p>
+                        <p class="dialogue">Spade haha </p>
+                        <p><span class="character">Elisa:</span></p>
+                        <p class="dialogue">Elisa</p>
+                        <p><span class="character">George:</span></p>
+                        <p class="dialogue">Elysia?</p>
+                        <p><span class="character">Elisa:</span></p>
+                        <p class="dialogue">Eeh lisa</p>
+                        <p><span class="character">George:</span></p>
+                        <p class="dialogue">Aha, where are you from?</p>
+                        <p><span class="character">Elisa:</span></p>
+                        <p class="dialogue">Switzerland </p>
+                        <p><span class="character">George:</span></p>
+                        <p class="dialogue">Cool, welcome...</p>
+                        <p><span class="character">Spade takes a long stare, while George takes off his bag.</span></p>
+
+                        <p><span class="character">Spade:</span></p>
+                        <p class="dialogue">cool shirt, and tie also</p>
+                        <p><span class="character">George:</span></p>
+                        <p class="dialogue">tnx, could you call them? and make sure that they are coming.</p>
+                        <p><span class="character">Spade:</span></p>
+                        <p class="dialogue">mmm yeah.</p>
+
+                        <p><span class="character">Spade takes a few steps towards the black beans, away from the rest and picks up his phone to call,the phone rings, spade face starts to fade - no answer. </span></p>
+
+                    </div>
+                </div>
+
+
+                <div class="scene">
+
+
+                    <div class="image-container">
+                        <img src="teacher.png" alt="Scene 2 Detail" />
+                    </div>
+
+                    <div class="dialogue-section">
+                        <p><span class="character">Spade(from talking to singing):</span></p>
+                        <p class="dialogue">What a nice shirt - and tie! I like how they put things in their place, every button and i cry  ugh,  My teacher My fantasy, you are The next city i'll be. He knows so much, but lies travel fast and I'll never know enough…</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="nav-buttons">
+
+                <a href="page3.html"><button>Continue</button></a>
+            </div>
+        </body>
+    </html>

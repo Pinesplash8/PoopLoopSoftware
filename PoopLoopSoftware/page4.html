@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Short Play Script</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="libs/p5.js"></script>
+    <style>
+        body {
+            background-image: url('ambientcafe.png'); 
+        
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Background Audio -->
+    <audio id="background-audio" loop>
+        <source src="sound/Shyweek_playedOut.wav" type="audio/wav">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <img src="audio_play.png" id="play-audio-button" alt="Play Audio" />
+
+    <script>
+        document.getElementById('play-audio-button').addEventListener('click', () => {
+            const audio = document.getElementById('background-audio');
+            audio.play();
+            document.getElementById('play-audio-button').style.display = 'none';
+        });
+    </script>
+
+    <div class="container">
+        
+        
+        <!-- Scene 1 -->
+        <div class="scene">
+            <div class="dialogue-section">
+                <p><span class="character">George:</span></p>
+                <p class="dialogue">So, what were you listening to?</p>
+
+                <p><span class="character">Elisa:</span></p>
+                <p class="dialogue">
+                    <a href="https://youtu.be/_C7HkOp78RU?si=wzmaPLE3r-9kHwi2">”Pop ambient 2012”</a>, like that's the name, it's a cool compilation that this label called Kompakt from Koln makes every year.
+                </p>
+
+                <p><span class="character">George:</span></p>
+                <p class="dialogue">Ahha, so it's close to you, right?</p>
+
+                <p><span class="character">Elisa:</span></p>
+                <p class="dialogue">Um, it's 4 hours by train.</p>
+
+                <p><span class="character">George:</span></p>
+                <p class="dialogue">Oh… Nice, so you know them in person?</p>
+
+                <p><span class="character">Elisa:</span></p>
+                <p class="dialogue">No, but once my friend played in a party in Basel with people that released in that label, so I mingled a bit but nothing serious...</p>
+
+                <p><span class="character">George:</span></p>
+                <p class="dialogue">Hehe, why did it get stupid?</p>
+
+                <p><span class="character">Elisa:</span></p>
+                <p class="dialogue">Like… Now I'll sit in a cafe, and I'll listen to it with my headphones, and I'll make stupid visuals in my head from other people and their cups...</p>
+
+                <p><span class="character">George:</span></p>
+                <p class="dialogue">Ahha, yeah, well you got tired of it.</p>
+
+                <p><span class="character">Elisa:</span></p>
+                <p class="dialogue">-_-</p>
+
+                <p><span class="character">George:</span></p>
+                <p class="dialogue">Yeah.</p>
+
+                <p><span class="character">Elisa:</span></p>
+                <p class="dialogue">Anyway, I heard that your class is “amazing”...</p>
+
+                <p><span class="character">George:</span></p>
+                <p class="dialogue">Amazing? Then I hope I will fulfill your expectations, where did you hear it from?</p>
+
+                <p><span class="character">Elisa:</span></p>
+                <p class="dialogue">Spade, he said it's the best class here.</p>
+
+                <p><span class="character">George:</span></p>
+                <p class="dialogue">Oh, you know him?</p>
+
+                <p><span class="character">Elisa:</span></p>
+                <p class="dialogue">We just met.</p>
+
+                <p><span class="character">George:</span></p>
+                <p class="dialogue">Yeah, you seem like you'll get along…</p>
+
+                <p><span class="character">Elisa:</span></p>
+                <p class="dialogue">-_-</p>
+
+                <p><span class="character">George:</span></p>
+                <p class="dialogue">Well, he seems to really admire you.</p>
+
+                <p><span class="character">Elisa:</span></p>
+                <p class="dialogue">Yeah, me neither, but he also said he’s in love with you.</p>
+
+                <p><span class="character">Elisa’s bag falls again - more beans are spreading.</span></p>
+
+                <p><span class="character">George:</span></p>
+                <p class="dialogue">He said that?</p>
+
+                <p><span class="character">Elisa:</span></p>
+                <p class="dialogue">Mmm, yeah...</p>
+
+                <p><span class="character">George:</span></p>
+                <p class="dialogue">Laughs <br> Ehhh no… you know he likes to be very dramatic in his language... I think you will notice it soon…</p>
+
+                <p><span class="character">Elisa:</span></p>
+                <p class="dialogue">Yeah, yeah, for sure, maybe he was just kidding…</p>
+
+                <p><span class="character">George:</span></p>
+                <p class="dialogue">Laughs <br> Did you study before?</p>
+
+                <p><span class="character">Elisa:</span></p>
+                <p class="dialogue">No, but I was in high school for Arts.</p>
+
+                <p><span class="character">George:</span></p>
+                <p class="dialogue">Laughs <br> Oh, for theater?</p>
+
+                <p><span class="character">Elisa:</span></p>
+                <p class="dialogue">Art.</p>
+
+                <p><span class="character">George:</span></p>
+                <p class="dialogue">Ah, like Spade.</p>
+
+                <p><span class="character">Elisa:</span></p>
+                <p class="dialogue">-_-</p>
+
+                <p><span class="character">George:</span></p>
+                <p class="dialogue">We will need to see how many show up because I planned something, but maybe it's weird for only 2 people.</p>
+
+                <p><span class="character">Elisa:</span></p>
+                <p class="dialogue">What did you plan?</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Continue Button -->
+    <div class="nav-buttons">
+        <a href="page5.html"><button>Continue</button></a>
+    </div>
+
+</body>
+</html>
